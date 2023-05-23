@@ -1,3 +1,3 @@
 <template>
-  <div>Index Page</div>
+  <HomeHero />
 </template>
