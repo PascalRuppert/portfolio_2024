@@ -2,13 +2,7 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const plugin = require('tailwindcss/plugin');
 module.exports = {
-  content: [
-    './components/**/*.{js,vue,ts}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-    './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}',
-  ],
+  content: ['./components/**/*.{js,vue,ts}', './layouts/**/*.vue', './pages/**/*.vue', './plugins/**/*.{js,ts}', './nuxt.config.{js,ts}'],
   theme: {
     aspectRatio: {
       auto: 'auto',
@@ -61,21 +55,7 @@ module.exports = {
       },
 
       fontFamily: {
-        jet: [
-          '"JetBrains Mono"',
-          'ui-monospace',
-          'Menlo',
-          'Monaco',
-          'Cascadia Mono',
-          'Segoe UI Mono',
-          'Roboto Mono',
-          'Oxygen Mono',
-          'Ubuntu Monospace',
-          'Source Code Pro',
-          'Fira Mono',
-          'Droid Sans Mono',
-          'monospace',
-        ],
+        jet: ['"JetBrains Mono"', 'ui-monospace', 'Menlo', 'Monaco', 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'monospace'],
       },
 
       fontSize: {

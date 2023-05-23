@@ -1,18 +1,18 @@
 module.exports = {
-  parser: 'vue-eslint-parser',
+  parser: "vue-eslint-parser",
   parserOptions: {
-    parser: '@typescript-eslint/parser',
+    parser: "@typescript-eslint/parser",
   },
-  extends: ['@nuxtjs/eslint-config-typescript', 'plugin:prettier/recommended'],
+  extends: ["@nuxtjs/eslint-config-typescript", "plugin:prettier/recommended"],
   rules: {
-    'prettier/prettier': [
-      'warn',
+    "prettier/prettier": [
+      "warn",
       {
         tabWidth: 2,
         printWidth: 300,
         singleQuote: true,
-        trailingComma: 'es5',
-        arrowParens: 'avoid',
+        trailingComma: "es5",
+        arrowParens: "avoid",
         semi: true,
       },
     ],
