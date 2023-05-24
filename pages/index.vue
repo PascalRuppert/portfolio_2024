@@ -2,5 +2,6 @@
   <div>
     <HomeHero />
     <CaseSection />
+    <ProjectSection />
   </div>
 </template>
