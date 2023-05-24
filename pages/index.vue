@@ -3,5 +3,6 @@
     <HomeHero />
     <CaseSection />
     <ProjectSection />
+    <ContactSection />
   </div>
 </template>
