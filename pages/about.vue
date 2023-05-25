@@ -1,3 +1,6 @@
 <template>
-  <AboutHero />
+  <div>
+    <AboutHero />
+    <ClientsSection />
+  </div>
 </template>
