@@ -1,0 +1,37 @@
+- name: Designit
+  corp: a wipro company
+  shorten: true
+  tenure: 6 years 10 months
+  logo: designit.jpg
+  location:
+    city: Tokyo
+    country: Japan
+
+  positions:
+    - title: Senior Digital Designer
+      duration: Jun 2022 - Feb 2023
+
+    - title: Digital Designer
+      duration: Jun 2019 - May 2022
+
+    - title: Junior Digital Designer
+      duration: Apr 2017 - May 2019
+
+    - title: Freelance UX Designer
+      duration: Oct 2016 - Mar 2017
+
+    - title: UX Design Intern
+      duration: May 2016 - Oct 2016
+
+- name: HERE,
+  corp: a Nokia company
+  shorten: false
+  tenure: 7 months
+  logo: here.jpg
+  location:
+    city: Berlin
+    country: Germany
+
+  positions:
+    - title: Interaction Design Intern
+      duration: Aug 2014 - Feb 2015
