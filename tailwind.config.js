@@ -61,18 +61,18 @@ module.exports = {
       fontSize: {
         // Mobile font sizes
 
-        tools: [
-          '0.75rem',
-          {
-            lineHeight: '1rem',
-            fontWeight: '300',
-          },
-        ],
         footer: [
           '0.75rem',
           {
             lineHeight: '1rem',
             fontWeight: '400',
+          },
+        ],
+        tools: [
+          '0.813rem',
+          {
+            lineHeight: '1rem',
+            fontWeight: '300',
           },
         ],
         detail: [
@@ -155,7 +155,7 @@ module.exports = {
 
         // Tablet font sizes
 
-        'md-tools': [
+        'sm-tools': [
           '0.875rem',
           {
             lineHeight: '1.125rem',
@@ -269,6 +269,7 @@ module.exports = {
 
       spacing: {
         18: '4.5rem',
+        22: '5.5rem',
       },
     },
   },
