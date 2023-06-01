@@ -3,6 +3,7 @@
 const plugin = require('tailwindcss/plugin');
 module.exports = {
   content: ['./components/**/*.{js,vue,ts}', './layouts/**/*.vue', './pages/**/*.vue', './plugins/**/*.{js,ts}', './nuxt.config.{js,ts}'],
+  safelist: ['object-top', 'object-center', 'object-bottom', 'object-left-top', 'object-left', 'object-left-bottom', 'object-right-top', 'object-right', 'object-right-bottom'],
   theme: {
     aspectRatio: {
       auto: 'auto',

@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="slug" class="col-span-4 sm:col-span-2 md:col-span-3 group hover:cursor-pointer">
     <div class="overflow-hidden rounded aspect-w-4 aspect-h-3">
-      <img :src="image" :alt="image" class="object-cover object-center w-full h-full transition duration-150 ease-in-out group-hover:scale-105" />
+      <img :src="'../assets/case/' + image" :alt="image" class="object-cover object-center w-full h-full transition duration-150 ease-in-out group-hover:scale-105" />
     </div>
     <h3 class="mt-4 antialiased text-itemtitle font-jet text-typo-600 xl:text-xl-itemtitle text-shadow">
       {{ title }}
