@@ -5,3 +5,12 @@
     <slot />
   </p>
 </template>
+
+<style scoped>
+.article_content h2 + p {
+  @apply mt-2  xl:mt-3;
+}
+.article_content p {
+  @apply mt-6 xl:mt-[1.75rem];
+}
+</style>
