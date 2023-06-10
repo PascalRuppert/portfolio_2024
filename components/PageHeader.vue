@@ -3,7 +3,10 @@
     <div id="Header_desktop" class="hidden sm:block">
       <GridLines class="-z-10" />
       <div class="flex flex-row flex-wrap content-center justify-between w-full px-6 h-18 sm:px-12 xl:px-16 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0">
-        <NuxtLink to="/"><img id="Memoji_desktop" src="assets/Memoji.png" alt="Memoji of Pascal" class="hidden w-[2.375rem] h-[2.375rem]" /></NuxtLink>
+        <NuxtLink to="/">
+          <IconsMenuBack v-if="activeRoute === 'case-slug'" class="w-10 h-10 text-typo-600 hover:-translate-x-1 motion-safe:transition-all motion-safe:duration-150" />
+          <img v-else id="Memoji_desktop" src="../assets/Memoji.png" alt="Memoji of Pascal" class="w-[2.375rem] h-[2.375rem]" :class="{ hidden: activeRoute === 'index' }" />
+        </NuxtLink>
         <nav class="flex flex-row flex-wrap content-center antialiased gap-x-10 text-typo-600 text-body xl:text-xl-body font-jet">
           <NuxtLink to="/" class="group">
             <p>// home</p>
@@ -24,19 +27,23 @@
     <div id="Header_mobile" class="sm:hidden">
       <GridLines class="-z-10" />
       <div class="flex flex-row flex-wrap content-center justify-between w-full px-6 h-14 sm:px-12 xl:px-16 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0">
-        <NuxtLink to="/"><img id="Memoji_mobile" src="assets/Memoji.png" alt="Memoji of Pascal" class="hidden w-8 h-8" /></NuxtLink>
-        <button id="MenuBtn" aria-label="Menu" class="z-10 w-8 h-8 text-typo-600">
-          <IconsMenuButton />
+        <NuxtLink to="/">
+          <IconsMenuBack v-if="activeRoute === 'case-slug'" class="w-8 h-8 text-typo-600" />
+          <img v-else id="Memoji_mobile" src="../assets/Memoji.png" alt="Memoji of Pascal" class="w-8 h-8" :class="{ hidden: activeRoute === 'index' }" />
+        </NuxtLink>
+        <button id="MenuBtn" aria-label="Menu" class="z-10 w-8 h-8 text-typo-600" @click="mobileMenu()">
+          <IconsMenuClose v-if="menuOpen" />
+          <IconsMenuButton v-else />
         </button>
       </div>
 
-      <div id="Menu_mobile" class="fixed top-0 bottom-0 left-0 right-0 hidden w-screen h-screen pb-20 pl-8 bg-base-100 pt-28">
+      <div id="Menu_mobile" class="fixed top-0 bottom-0 left-0 right-0 w-screen h-screen pb-20 pl-8 bg-base-100 pt-28" :class="{ hidden: !menuOpen }">
         <div>
           <nav class="flex flex-col flex-wrap items-start antialiased gap-y-4 text-typo-600 text-menu font-jet">
-            <NuxtLink to="/">
+            <NuxtLink to="/" event="" @click.prevent="mobileMenu('/')">
               <p>home</p>
             </NuxtLink>
-            <NuxtLink to="/about">
+            <NuxtLink to="/about" event="" @click.prevent="mobileMenu('/about')">
               <p>about</p>
             </NuxtLink>
             <a href="mailto:ixd.pascalruppert@gmail.com">
@@ -59,6 +66,56 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      activeRoute: this.$route.name,
+      menuOpen: false,
+      scrollPosition: 0,
+    };
+  },
+  watch: {
+    $route() {
+      this.activeRoute = this.$route.name;
+    },
+  },
+  methods: {
+    getRoute() {
+      this.activeRoute = this.$route.name;
+    },
+    mobileMenu(path) {
+      if (!this.menuOpen) {
+        this.scrollPosition = window.pageYOffset;
+        this.menuOpen = true;
+        document.body.classList.add('overflow-hidden', 'fixed', 'bg-base-100');
+        document.body.classList.remove('bg-base-200');
+        document.getElementsByTagName('main')[0].style.top = -this.scrollPosition + 'px';
+      } else {
+        document.body.classList.remove('overflow-hidden', 'fixed', 'bg-base-100');
+        document.body.classList.add('bg-base-200');
+        if (this.activeRoute === 'case-slug') {
+          document.documentElement.classList.remove('scroll-smooth');
+        }
+        window.scrollTo(0, this.scrollPosition);
+        document.getElementsByTagName('main')[0].removeAttribute('style');
+        if (this.activeRoute === 'case-slug') {
+          document.documentElement.classList.add('scroll-smooth');
+        }
+        if (path === undefined) {
+          this.menuOpen = false;
+        } else {
+          this.$router.push({ path });
+          setTimeout(() => {
+            this.menuOpen = false;
+          }, 300);
+        }
+      }
+    },
+  },
+};
+</script>
 
 <style scoped>
 #Header_desktop nav a.router-link-active {
