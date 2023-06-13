@@ -1,5 +1,5 @@
 <template>
-  <section class="relative px-6 pb-24 mt-24 sm:px-12 xl:px-16 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0 xl:my-36">
+  <section class="relative px-6 mt-24 sm:px-12 xl:px-16 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0 xl:mt-36">
     <hgroup>
       <h3 class="antialiased uppercase text-section font-jet text-var-1 xl:text-xl-section">Collaborate</h3>
       <h2 class="mt-2 antialiased text-sectiontitle font-jet text-typo-600 xl:text-xl-sectiontitle text-shadow">Got a project?<br />Let's talk</h2>

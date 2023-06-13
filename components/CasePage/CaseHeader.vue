@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full pt-6 sm:pt-10">
+  <section class="relative w-full">
     <div class="sm:flex sm:flex-col sm:h-[calc(100vh-7rem)] sm:max-h-[37.5rem] md:max-h-[46.875rem] sm:min-h-[31.25rem] xl:max-h-[62.5rem]">
       <div class="w-full px-6 sm:px-12 xl:px-16 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0">
         <div class="grid w-full grid-cols-4 gap-x-4 sm:gap-x-6 md:grid-cols-6 xl:gap-x-8">

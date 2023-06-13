@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-24 mt-14 xl:mt-20 xl:mb-36">
+  <div class="mt-14 xl:mt-20">
     <p v-if="company.name != undefined" class="antialiased italic text-body font-jet text-typo-400 xl:text-xl-body">
       Special thanks to
       <span v-for="(person, index) of contributors" :key="person" class="inline-block whitespace-nowrap">{{ index + 1 === contributors.length ? person : person + ',&nbsp;' }}</span>

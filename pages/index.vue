@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pt-10 pb-24 sm:pt-20 xl:pb-30">
     <HomeHero />
     <CaseSection />
     <ProjectSection />
