@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="relative px-6 mt-20 sm:px-12 xl:px-16 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0 xl:mt-32">
+  <section class="relative px-6 mt-20 sm:px-12 xl:px-16 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0 xl:mt-30">
     <div class="grid w-full grid-cols-4 gap-x-4 sm:gap-x-6 md:grid-cols-6 xl:gap-x-8">
       <h2 class="col-span-2 mb-10 antialiased xl:mb-12 text-sectiontitle font-jet text-typo-600 xl:text-xl-sectiontitle text-shadow">Also worth<br />mentioning</h2>
     </div>
