@@ -11,7 +11,7 @@
       </ContentQuery>
     </ol>
 
-    <button class="inline-block mt-6 antialiased underline uppercase sm:no-underline underline-offset-[6px] text-btn text-typo-600 font-jet xl:text-xl-btn xl:hidden group" @click="toggleClass">
+    <button class="inline-block mt-6 antialiased uppercase text-btn text-typo-600 font-jet xl:text-xl-btn xl:hidden group" @click="toggleClass">
       <p v-if="isMinimized" class="flex gap-x-2">
         Show all
         <span>
@@ -28,7 +28,7 @@
           </svg>
         </span>
       </p>
-      <div class="w-full h-px mt-px bg-gradient-to-r from-link to-link sm:bg-no-repeat [background-position:0] [background-size:0] sm:motion-safe:transition-all sm:motion-safe:duration-150 sm:group-hover:[background-size:100%]"></div>
+      <div class="w-full h-px mt-px bg-typo-600 sm:bg-[unset] sm:bg-gradient-to-r sm:from-link sm:to-link sm:bg-no-repeat sm:[background-position:0] sm:[background-size:0] sm:motion-safe:transition-all sm:motion-safe:duration-150 sm:group-hover:[background-size:100%]"></div>
     </button>
   </section>
 </template>
