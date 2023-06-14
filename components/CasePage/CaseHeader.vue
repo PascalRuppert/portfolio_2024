@@ -4,7 +4,7 @@
       <div class="w-full px-6 sm:px-12 xl:px-16 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0">
         <div class="grid w-full grid-cols-4 gap-x-4 sm:gap-x-6 md:grid-cols-6 xl:gap-x-8">
           <div class="col-span-4 md:col-span-6">
-            <h3 class="antialiased text-section font-jet text-var-1 xl:text-xl-section">
+            <h3 class="antialiased text-section font-jet text-var-3 xl:text-xl-section">
               {{ client }}
             </h3>
             <h1 class="mt-2 antialiased text-herotitle font-jet text-typo-600 lg:text-lg-herotitle xl:text-xl-herotitle xl:mt-4">{{ title }}_</h1>
