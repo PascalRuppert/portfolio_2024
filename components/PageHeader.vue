@@ -89,12 +89,12 @@ export default {
       if (!this.menuOpen) {
         this.scrollPosition = window.pageYOffset;
         this.menuOpen = true;
-        document.body.classList.add('overflow-hidden', 'fixed', 'bg-base-100');
-        document.body.classList.remove('bg-base-200');
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#02111d');
+        document.body.classList.add('overflow-hidden', 'fixed');
         document.getElementsByTagName('main')[0].style.top = -this.scrollPosition + 'px';
       } else {
-        document.body.classList.remove('overflow-hidden', 'fixed', 'bg-base-100');
-        document.body.classList.add('bg-base-200');
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#021626');
+        document.body.classList.remove('overflow-hidden', 'fixed');
         if (this.activeRoute === 'case-slug') {
           document.documentElement.classList.remove('scroll-smooth');
         }
