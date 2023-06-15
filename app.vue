@@ -34,6 +34,11 @@ useHead({
     { name: 'theme-color', content: '#021626' },
   ],
 });
+onMounted(() => {
+  document.addEventListener('dblclick', function (event) {
+    event.preventDefault();
+  });
+});
 </script>
 
 <template>
