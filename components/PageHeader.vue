@@ -4,7 +4,7 @@
       <GridLines class="-z-10" />
       <div class="flex flex-row flex-wrap content-center justify-between w-full px-6 h-18 sm:px-12 xl:px-16 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0">
         <NuxtLink to="/">
-          <IconsMenuBack v-if="activeRoute === 'case-slug'" class="w-10 h-10 text-typo-600 hover:-translate-x-1 motion-safe:transition-all motion-safe:duration-150" />
+          <IconsMenuBack v-if="activeRoute === 'case-slug'" class="w-10 h-10 text-typo-600 hover:-translate-x-1 motion-safe:transition-all motion-safe:duration-200" />
           <div v-else id="Memoji_desktop" class="w-[2.375rem] h-[2.375rem] group select-none" :class="{ hidden: activeRoute === 'index' }">
             <img src="../assets/Memoji.png" alt="Memoji of Pascal" class="block w-full h-full group-hover:hidden" />
             <img src="../assets/Memoji_wink.png" alt="" class="hidden w-full h-full group-hover:block" />
@@ -13,15 +13,15 @@
         <nav class="flex flex-row flex-wrap content-center antialiased gap-x-10 text-typo-600 text-body xl:text-xl-body font-jet">
           <NuxtLink to="/" class="group">
             <p>// home</p>
-            <div class="w-full h-px mt-px bg-gradient-to-r from-link to-link bg-no-repeat [background-position:0] [background-size:0] motion-safe:transition-all motion-safe:duration-150 group-hover:[background-size:100%]"></div>
+            <div class="w-full h-px mt-px bg-gradient-to-r from-link to-link bg-no-repeat [background-position:0] [background-size:0] motion-safe:transition-all motion-safe:duration-200 group-hover:[background-size:100%]"></div>
           </NuxtLink>
           <NuxtLink to="/about" class="group">
             <p>// about</p>
-            <div class="w-full h-px mt-px bg-gradient-to-r from-link to-link bg-no-repeat [background-position:0] [background-size:0] motion-safe:transition-all motion-safe:duration-150 group-hover:[background-size:100%]"></div>
+            <div class="w-full h-px mt-px bg-gradient-to-r from-link to-link bg-no-repeat [background-position:0] [background-size:0] motion-safe:transition-all motion-safe:duration-200 group-hover:[background-size:100%]"></div>
           </NuxtLink>
           <a href="mailto:ixd.pascalruppert@gmail.com" class="group">
             <p>// contact</p>
-            <div class="w-full h-px mt-px bg-gradient-to-r from-link to-link bg-no-repeat [background-position:0] [background-size:0] motion-safe:transition-all motion-safe:duration-150 group-hover:[background-size:100%]"></div>
+            <div class="w-full h-px mt-px bg-gradient-to-r from-link to-link bg-no-repeat [background-position:0] [background-size:0] motion-safe:transition-all motion-safe:duration-200 group-hover:[background-size:100%]"></div>
           </a>
         </nav>
       </div>
