@@ -273,6 +273,18 @@ module.exports = {
         22: '5.5rem',
         30: '7.5rem',
       },
+
+      animation: {
+        'logoscroll-l': 'logoscroll 25s linear infinite',
+        'logoscroll-r': 'logoscroll 25s linear reverse infinite',
+      },
+
+      keyframes: {
+        logoscroll: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
     },
   },
   corePlugins: {
