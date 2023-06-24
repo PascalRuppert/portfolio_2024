@@ -100,7 +100,7 @@ module.exports = {
         body: [
           '1rem',
           {
-            lineHeight: '1.5rem',
+            lineHeight: '1.625rem',
             fontWeight: '300',
           },
         ],
@@ -211,7 +211,7 @@ module.exports = {
         'xl-body': [
           '1.125rem',
           {
-            lineHeight: '1.75rem',
+            lineHeight: '1.875rem',
             fontWeight: '300',
           },
         ],

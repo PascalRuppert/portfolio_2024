@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full mt-4 mb-6 xl:mt-5 xl:mb-[1.75rem] overflow-hidden border-[0.5px] border-solid rounded-lg prose-code bg-base-300 border-base-100 code-prose">
+  <div class="relative w-full mt-4 mb-[1.625rem] xl:mt-5 xl:mb-[1.875rem] overflow-hidden border-[0.5px] border-solid rounded-lg prose-code bg-base-300 border-base-100 code-prose">
     <div v-if="opt_header" class="flex flex-row items-center justify-between px-3 py-2 border-b border-solid border-typo-400/20">
       <div class="flex items-center">
         <div v-if="language" class="inline w-5 h-5 mr-2 text-typo-500">
