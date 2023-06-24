@@ -277,12 +277,19 @@ module.exports = {
       animation: {
         'logoscroll-l': 'logoscroll 25s linear infinite',
         'logoscroll-r': 'logoscroll 25s linear reverse infinite',
+        'cursor-blink': 'blink 1.25s infinite',
       },
 
       keyframes: {
         logoscroll: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
+        },
+        blink: {
+          '0%': { opacity: '1' },
+          '40%': { opacity: '1' },
+          '60%': { opacity: '0' },
+          '100%': { opacity: '0' },
         },
       },
     },

@@ -7,7 +7,7 @@
             <h3 class="antialiased text-section font-jet text-var-3 xl:text-xl-section">
               {{ client }}
             </h3>
-            <h1 class="mt-2 antialiased text-herotitle font-jet text-typo-600 lg:text-lg-herotitle xl:text-xl-herotitle xl:mt-4">{{ title }}_</h1>
+            <h1 id="Title" class="mt-2 antialiased text-herotitle font-jet text-typo-600 lg:text-lg-herotitle xl:text-xl-herotitle xl:mt-4 after:content-['\_'] after:font-light"></h1>
             <p class="mt-4 antialiased uppercase font-jet text-expertise text-typo-500 xl:text-xl-expertise xl:mt-6">{{ year }}<span class="mx-1 font-bold">·</span>{{ tags.join(', ') }}</p>
           </div>
         </div>
@@ -43,6 +43,27 @@ export default {
     cover: {
       type: Object,
       required: true,
+    },
+  },
+  data() {
+    return {
+      delay: 50,
+      position: this.title.length - 20,
+    };
+  },
+  mounted() {
+    this.typewriter();
+  },
+  methods: {
+    typewriter() {
+      document.querySelector('#Title').innerHTML = this.title.substring(0, this.position);
+      if (this.position++ !== this.title.length) {
+        document.querySelector('#Title').classList.add('after:animate-none');
+        setTimeout(this.typewriter, this.delay);
+      } else {
+        document.querySelector('#Title').classList.remove('after:animate-none');
+        document.querySelector('#Title').classList.add('after:animate-cursor-blink');
+      }
     },
   },
 };
