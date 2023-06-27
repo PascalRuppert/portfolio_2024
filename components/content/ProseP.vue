@@ -1,7 +1,5 @@
 <template>
-  <p
-    class="antialiased font-jet text-typo-500 text-body xl:text-xl-body group-[.home-hero]:mt-4 group-[.home-hero]:text-hero xl:group-[.home-hero]:text-xl-hero group-[.about-hero]:font-normal group-[.about-hero]:mt-4 group-[.about-hero]:[&:nth-child(n+3)]:mt-[1.625rem] xl:group-[.about-hero]:[&:nth-child(n+3)]:mt-[1.875rem]"
-  >
+  <p class="antialiased font-jet text-typo-500 text-body xl:text-xl-body">
     <slot />
   </p>
 </template>
@@ -12,5 +10,17 @@
 }
 .article_content p {
   @apply mt-[1.625rem]  xl:mt-[1.875rem];
+}
+
+.home-hero p {
+  @apply mt-4 text-hero xl:text-xl-hero;
+}
+
+.about-hero p {
+  @apply font-normal mt-4;
+}
+
+.about-hero p:nth-child(n + 3) {
+  @apply mt-[1.625rem] xl:mt-[1.875rem];
 }
 </style>
