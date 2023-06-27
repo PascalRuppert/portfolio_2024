@@ -14,6 +14,16 @@
       </div>
 
       <div class="mt-10 overflow-hidden aspect-w-8 aspect-h-5 sm:aspect-none sm:flex-1">
+        <div class="hidden xl:block">
+          <div class="absolute w-full bottom-4">
+            <div class="flex items-center justify-center w-10 h-10 p-2 mx-auto bg-white rounded-full shadow-lg animate-bounce dark:bg-slate-800 ring-1 ring-slate-900/5 dark:ring-slate-200/20">
+              <svg class="w-6 h-6 text-var-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
         <video v-if="cover.type === 'video'" class="object-cover w-full h-full sm:w-full sm:h-full" loop autoplay muted playsinline :data-src="'../assets/case/' + cover.src" aria-hidden="true" :src="'../assets/case/' + cover.src" :poster="'../assets/case/' + cover.poster"></video>
         <img v-if="cover.type === 'image'" class="object-cover w-full h-full sm:w-full sm:h-full" :src="'../assets/case/' + cover.src" :class="'object-' + cover.pos" />
       </div>
