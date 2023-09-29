@@ -7,7 +7,12 @@
             <h3 class="antialiased text-section font-jet text-var-3 xl:text-xl-section">
               {{ client }}
             </h3>
-            <h1 id="Title" class="mt-2 antialiased text-herotitle font-jet text-typo-600 lg:text-lg-herotitle xl:text-xl-herotitle xl:mt-4 after:content-['\_'] after:font-light"></h1>
+            <div class="relative block">
+              <h1 id="Title" class="absolute antialiased text-herotitle font-jet text-typo-600 lg:text-lg-herotitle xl:text-xl-herotitle after:content-['\_'] after:font-light" aria-hidden="true"></h1>
+              <h1 class="mt-2 antialiased opacity-0 xl:mt-4 text-herotitle font-jet text-typo-600 lg:text-lg-herotitle xl:text-xl-herotitle">
+                {{ title }}
+              </h1>
+            </div>
             <p class="mt-4 antialiased uppercase font-jet text-expertise text-typo-500 xl:text-xl-expertise xl:mt-6">{{ year }}<span class="mx-1 font-bold">·</span>{{ tags.join(', ') }}</p>
           </div>
         </div>
