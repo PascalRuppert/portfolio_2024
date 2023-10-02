@@ -9,7 +9,7 @@
             </h3>
             <div class="relative block">
               <h1 id="Title" class="absolute antialiased text-herotitle font-jet text-typo-600 lg:text-lg-herotitle xl:text-xl-herotitle after:content-['\_'] after:font-light" aria-hidden="true"></h1>
-              <h1 class="mt-2 antialiased opacity-0 xl:mt-4 text-herotitle font-jet text-typo-600 lg:text-lg-herotitle xl:text-xl-herotitle">
+              <h1 class="mt-2 antialiased opacity-0 xl:mt-4 text-herotitle font-jet text-typo-600 lg:text-lg-herotitle xl:text-xl-herotitle after:content-['\_']">
                 {{ title }}
               </h1>
             </div>
