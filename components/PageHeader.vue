@@ -6,8 +6,16 @@
         <NuxtLink to="/">
           <IconsMenuBack v-if="activeRoute === 'case-slug'" class="w-10 h-10 text-typo-600 hover:-translate-x-1 motion-safe:transition-all motion-safe:duration-200" />
           <div v-else id="Memoji_desktop" class="w-[2.375rem] h-[2.375rem] group select-none" :class="{ hidden: activeRoute === 'index' }">
-            <img src="../assets/Memoji.png" alt="Memoji of Pascal" class="block w-full h-full group-hover:hidden" />
-            <img src="../assets/Memoji_wink.png" alt="" class="hidden w-full h-full group-hover:block" />
+            <picture>
+              <source type="image/avif" srcset="../assets/memoji/Memoji.avif" />
+              <source type="image/webp" srcset="../assets/memoji/Memoji.webp" />
+              <img src="../assets/memoji/Memoji.png" alt="Memoji of Pascal" class="block w-full h-full group-hover:hidden" />
+            </picture>
+            <picture>
+              <source type="image/avif" srcset="../assets/memoji/Memoji_wink.avif" />
+              <source type="image/webp" srcset="../assets/memoji/Memoji_wink.webp" />
+              <img src="../assets/memoji/Memoji_wink.png" alt="Memoji of Pascal" class="hidden w-full h-full group-hover:block" />
+            </picture>
           </div>
         </NuxtLink>
         <nav class="flex flex-row flex-wrap content-center antialiased gap-x-10 text-typo-600 text-body xl:text-xl-body font-jet">
@@ -32,7 +40,11 @@
       <div class="flex flex-row flex-wrap content-center justify-between w-full px-6 h-14 sm:px-12 xl:px-16 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0">
         <NuxtLink to="/">
           <IconsMenuBack v-if="activeRoute === 'case-slug'" class="w-8 h-8 text-typo-600" />
-          <img v-else id="Memoji_mobile" src="../assets/Memoji.png" alt="Memoji of Pascal" class="w-8 h-8" :class="{ hidden: activeRoute === 'index' }" />
+          <picture v-else>
+            <source type="image/avif" srcset="../assets/memoji/Memoji.avif" />
+            <source type="image/webp" srcset="../assets/memoji/Memoji.webp" />
+            <img id="Memoji_mobile" src="../assets/memoji/Memoji.png" alt="Memoji of Pascal" class="w-8 h-8" :class="{ hidden: activeRoute === 'index' }" />
+          </picture>
         </NuxtLink>
         <button id="MenuBtn" aria-label="Menu" class="z-10 w-8 h-8 text-typo-600" @click="mobileMenu()">
           <IconsMenuClose v-if="menuOpen" />

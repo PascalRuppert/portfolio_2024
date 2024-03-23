@@ -29,8 +29,113 @@
           </div>
         </div>
 
-        <video v-if="cover.type === 'video'" class="object-cover w-full h-full sm:w-full sm:h-full" loop autoplay muted playsinline :data-src="'../assets/case/' + cover.src" aria-hidden="true" :src="'../assets/case/' + cover.src" :poster="'../assets/case/' + cover.poster"></video>
-        <img v-if="cover.type === 'image'" class="object-cover w-full h-full sm:w-full sm:h-full" :src="'../assets/case/' + cover.src" :class="'object-' + cover.pos" />
+        <video v-if="cover.type === 'video'" class="object-cover w-full h-full sm:w-full sm:h-full" loop autoplay muted playsinline :poster="'../assets/case/' + cover.poster" aria-hidden="true">
+          <source media="(min-width: 1280px)" :src="path + cover.src + '-1920.webm'" type="video/webm" />
+          <source media="(min-width: 1280px)" :src="path + cover.src + '-1920.mp4'" type="video/mp4" />
+          <source media="(min-width: 1280px)" :src="path + cover.src + '-1920.mov'" type="video/mov" />
+
+          <source media="(min-width: 854px)" :src="path + cover.src + '-1280.webm'" type="video/webm" />
+          <source media="(min-width: 854px)" :src="path + cover.src + '-1280.mp4'" type="video/mp4" />
+          <source media="(min-width: 854px)" :src="path + cover.src + '-1280.mov'" type="video/mov" />
+
+          <source media="(min-width: 640px)" :src="path + cover.src + '-854.webm'" type="video/webm" />
+          <source media="(min-width: 640px)" :src="path + cover.src + '-845.mp4'" type="video/mp4" />
+          <source media="(min-width: 640px)" :src="path + cover.src + '-845.mov'" type="video/mov" />
+
+          <source :src="path + cover.src + '-640.webm'" type="video/webm" />
+          <source :src="path + cover.src + '-640.mp4'" type="video/mp4" />
+          <source :src="path + cover.src + '-640.mov'" type="video/mov" />
+        </video>
+
+        <picture v-if="cover.type === 'image'">
+          <source
+            :srcset="
+              path +
+              cover.src +
+              '-400.avif 400w,' +
+              path +
+              cover.src +
+              '-640.avif 640w,' +
+              path +
+              cover.src +
+              '-800.avif 800w,' +
+              path +
+              cover.src +
+              '-960.avif 960w,' +
+              path +
+              cover.src +
+              '-1280.avif 1280w,' +
+              path +
+              cover.src +
+              '-1600.avif 1600w,' +
+              path +
+              cover.src +
+              '-1800.avif 1800w,' +
+              path +
+              cover.src +
+              '-2000.avif 2000w'
+            "
+            type="image/avif"
+          />
+          <source
+            :srcset="
+              path +
+              cover.src +
+              '-400.webp 400w,' +
+              path +
+              cover.src +
+              '-640.webp 640w,' +
+              path +
+              cover.src +
+              '-800.webp 800w,' +
+              path +
+              cover.src +
+              '-960.webp 960w,' +
+              path +
+              cover.src +
+              '-1280.webp 1280w,' +
+              path +
+              cover.src +
+              '-1600.webp 1600w,' +
+              path +
+              cover.src +
+              '-1800.webp 1800w,' +
+              path +
+              cover.src +
+              '-2000.webp 2000w'
+            "
+            type="image/webp"
+          />
+          <source
+            :srcset="
+              path +
+              cover.src +
+              '-400.jpg 400w,' +
+              path +
+              cover.src +
+              '-640.jpg 640w,' +
+              path +
+              cover.src +
+              '-800.jpg 800w,' +
+              path +
+              cover.src +
+              '-960.jpg 960w,' +
+              path +
+              cover.src +
+              '-1280.jpg 1280w,' +
+              path +
+              cover.src +
+              '-1600.jpg 1600w,' +
+              path +
+              cover.src +
+              '-1800.jpg 1800w,' +
+              path +
+              cover.src +
+              '-2000.jpg 2000w'
+            "
+          />
+          <img :src="path + cover.src + '-400.jpg'" class="object-cover w-full h-full sm:w-full sm:h-full" :class="'object-' + cover.pos" alt="Case Cover Image" />
+        </picture>
       </div>
     </div>
   </section>
@@ -64,6 +169,7 @@ export default {
     return {
       delay: 50,
       position: this.title.length - 20,
+      path: '../assets/case/',
     };
   },
   mounted() {

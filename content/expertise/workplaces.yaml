@@ -2,7 +2,7 @@
   corp: a wipro company
   shorten: true
   tenure: 6 years 10 months
-  logo: designit.jpg
+  logo: designit
   location:
     city: Tokyo
     country: Japan
@@ -27,7 +27,7 @@
   corp: a Nokia company
   shorten: false
   tenure: 7 months
-  logo: here.jpg
+  logo: here
   location:
     city: Berlin
     country: Germany

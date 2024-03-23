@@ -1,7 +1,24 @@
 <template>
   <NuxtLink :to="slug" class="col-span-4 sm:col-span-2 md:col-span-3 group hover:cursor-pointer">
     <div class="overflow-hidden rounded aspect-w-4 aspect-h-3">
-      <img :src="'../assets/case/' + image" :alt="image" class="object-cover object-center w-full h-full ease-in-out sm:motion-safe:transition sm:motion-safe:duration-200 sm:group-hover:scale-105" />
+      <picture>
+        <source media="(min-width: 1408px)" :srcset="img + '-640.avif 640w,' + img + '-1280.avif 1280w,' + img + '-1600.avif 1600w'" sizes="39em" type="image/avif" />
+        <source media="(min-width: 1408px)" :srcset="img + '-640.webp 640w,' + img + '-1280.webp 1280w,' + img + '-1600.webp 1600w'" sizes="39em" type="image/webp" />
+        <source media="(min-width: 1408px)" :srcset="img + '-640.jpg 640w,' + img + '-1280.jpg 1280w,' + img + '-1600.jpg 1600w'" sizes="39em" />
+
+        <source media="(min-width: 1280px)" :srcset="img + '-640.avif 640w,' + img + '-1280.avif 1280w,' + img + '-1600.avif 1600w'" sizes="calc((100vw - 10em) / 2)" type="image/avif" />
+        <source media="(min-width: 1280px)" :srcset="img + '-640.webp 640w,' + img + '-1280.webp 1280w,' + img + '-1600.webp 1600w'" sizes="calc((100vw - 10em) / 2)" type="image/webp" />
+        <source media="(min-width: 1280px)" :srcset="img + '-640.jpg 640w,' + img + '-1280.jpg 1280w,' + img + '-1600.jpg 1600w'" sizes="calc((100vw - 10em) / 2)" />
+
+        <source media="(min-width: 720px)" :srcset="img + '-400.avif 400w,' + img + '-640.avif 640w,' + img + '-800.avif 800w,' + img + '-960.avif 960w,' + img + '-1280.avif 1280w,' + img + '-1600.avif 1600w'" sizes="calc((100vw - 7.5em) / 2)" type="image/avif" />
+        <source media="(min-width: 720px)" :srcset="img + '-400.webp 400w,' + img + '-640.webp 640w,' + img + '-800.webp 800w,' + img + '-960.webp 960w,' + img + '-1280.webp 1280w,' + img + '-1600.webp 1600w'" sizes="calc((100vw - 7.5em) / 2)" type="image/webp" />
+        <source media="(min-width: 720px)" :srcset="img + '-400.jpg 400w,' + img + '-640.jpg 640w,' + img + '-800.jpg 800w,' + img + '-960.jpg 960w,' + img + '-1280.jpg 1280w,' + img + '-1600.jpg 1600w'" sizes="calc((100vw - 7.5em) / 2)" />
+
+        <source :srcset="img + '-400.avif 400w,' + img + '-640.avif 640w,' + img + '-800.avif 800w,' + img + '-960.avif 960w,' + img + '-1280.avif 1280w,' + img + '-1600.avif 1600w'" sizes="calc(100vw - 3em)" type="image/avif" />
+        <source :srcset="img + '-400.webp 400w,' + img + '-640.webp 640w,' + img + '-800.webp 800w,' + img + '-960.webp 960w,' + img + '-1280.webp 1280w,' + img + '-1600.webp 1600w'" sizes="calc(100vw - 3em)" type="image/webp" />
+        <source :srcset="img + '-400.jpg 400w,' + img + '-640.jpg 640w,' + img + '-800.jpg 800w,' + img + '-960.jpg 960w,' + img + '-1280.jpg 1280w,' + img + '-1600.jpg 1600w'" sizes="calc(100vw - 3em)" />
+        <img :src="img + '-1600.jpg'" class="object-cover object-center w-full h-full ease-in-out sm:motion-safe:transition sm:motion-safe:duration-200 sm:group-hover:scale-105" :alt="image" />
+      </picture>
     </div>
     <h3 class="mt-4 antialiased text-itemtitle font-jet text-typo-600 xl:text-xl-itemtitle text-shadow">
       {{ title }}
@@ -35,6 +52,11 @@ export default {
       type: String,
       required: true,
     },
+  },
+  data() {
+    return {
+      img: '../assets/case/' + this.$props.image,
+    };
   },
 };
 </script>
