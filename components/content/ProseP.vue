@@ -8,6 +8,11 @@
 .article_content h2 + p {
   @apply mt-2  xl:mt-3;
 }
+
+.article_content h3 + p {
+  @apply mt-2  xl:mt-2;
+}
+
 .article_content p {
   @apply mt-[1.625rem]  xl:mt-[1.875rem];
 }
