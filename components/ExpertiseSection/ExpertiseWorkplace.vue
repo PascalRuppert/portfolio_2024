@@ -2,9 +2,9 @@
   <article>
     <div class="flex flex-row items-center gap-x-4 xl:gap-x-6">
       <picture>
-        <source type="image/avif" :srcset="'assets/org_logos/' + workplace.logo + '.avif'" />
-        <source type="image/webp" :srcset="'assets/org_logos/' + workplace.logo + '.webp'" />
-        <img :src="'assets/org_logos/' + workplace.logo + '.jpg'" :alt="'Logo of ' + workplace.name" class="h-[4.313rem] w-[4.313rem] rounded xl:h-20 xl:w-20" />
+        <source type="image/avif" :srcset="'/assets/org_logos/' + workplace.logo + '.avif'" />
+        <source type="image/webp" :srcset="'/assets/org_logos/' + workplace.logo + '.webp'" />
+        <img :src="'/assets/org_logos/' + workplace.logo + '.jpg'" :alt="'Logo of ' + workplace.name" class="h-[4.313rem] w-[4.313rem] rounded xl:h-20 xl:w-20" />
       </picture>
       <div>
         <h3 class="antialiased text-itemtitle font-jet text-typo-600 xl:text-xl-itemtitle">

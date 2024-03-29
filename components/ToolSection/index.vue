@@ -14,5 +14,6 @@
 </template>
 
 <script setup>
-const tools = await queryContent('tools').findOne();
+const { locale } = useI18n();
+const tools = await queryContent(locale.value, 'tools').findOne();
 </script>

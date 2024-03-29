@@ -29,7 +29,8 @@
 </template>
 
 <script setup>
-const workplaces = await queryContent('expertise/workplaces').findOne();
-const educations = await queryContent('expertise/education').findOne();
-const skills = await queryContent('expertise/skills').findOne();
+const { locale } = useI18n();
+const workplaces = await queryContent(locale.value, 'expertise/workplaces').findOne();
+const educations = await queryContent(locale.value, 'expertise/education').findOne();
+const skills = await queryContent(locale.value, 'expertise/skills').findOne();
 </script>

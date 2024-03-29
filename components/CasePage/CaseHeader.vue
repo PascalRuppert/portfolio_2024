@@ -29,7 +29,7 @@
           </div>
         </div>
 
-        <video v-if="cover.type === 'video'" class="object-cover w-full h-full sm:w-full sm:h-full" loop autoplay muted playsinline :poster="'../assets/case/' + cover.poster" aria-hidden="true">
+        <video v-if="cover.type === 'video'" class="object-cover w-full h-full sm:w-full sm:h-full" loop autoplay muted playsinline :poster="'/assets/case/' + cover.poster" aria-hidden="true">
           <source media="(min-width: 1280px)" :src="path + cover.src + '-1920.webm'" type="video/webm" />
           <source media="(min-width: 1280px)" :src="path + cover.src + '-1920.mp4'" type="video/mp4" />
           <source media="(min-width: 1280px)" :src="path + cover.src + '-1920.mov'" type="video/mov" />
@@ -169,7 +169,7 @@ export default {
     return {
       delay: 50,
       position: this.title.length - 20,
-      path: '../assets/case/',
+      path: '/assets/case/',
     };
   },
   mounted() {

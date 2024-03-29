@@ -1,0 +1,53 @@
+- name: Figma
+  logo: figma.svg
+
+- name: Sketch
+  logo: sketch.svg
+
+- name: Miro
+  logo: miro.svg
+
+- name: Adobe CC
+  logo: adobecc.svg
+
+- name: InVision
+  logo: invision.svg
+
+- name: Keynote
+  logo: keynote.svg
+
+- name: HTML
+  logo: html.svg
+
+- name: CSS
+  logo: css.svg
+
+- name: JS
+  logo: js.svg
+
+- name: Tailwind
+  logo: tailwind.svg
+
+- name: Nuxt 3
+  logo: nuxt.svg
+
+- name: MongoDB
+  logo: mongodb.svg
+
+- name: Node JS
+  logo: nodejs.svg
+
+- name: VS Code
+  logo: vscode.svg
+
+- name: Git
+  logo: git.svg
+
+- name: Zeplin
+  logo: zeplin.svg
+
+- name: ChatGPT
+  logo: chatgpt.svg
+
+- name: Terminal
+  logo: terminal.svg

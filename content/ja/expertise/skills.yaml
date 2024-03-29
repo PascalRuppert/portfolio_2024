@@ -1,0 +1,48 @@
+- group: Design
+  tags:
+    [
+      "UX Design",
+      "UI Design",
+      "Responsive Design",
+      "User Personas",
+      "User Journey",
+      "Value Proposition",
+      "Information Architecture",
+      "UX Flows",
+      "Wireframing",
+      "Prototyping",
+      "Design Systems",
+      "Design Thinking",
+      "Concept Creation",
+      "Strategic Design",
+      "Creative Technology",
+    ]
+
+- group: Research
+  tags:
+    [
+      "Research Planning",
+      "Validation",
+      "Heuristic Analysis",
+      "A/B Testing",
+      "Usability Testing",
+      "User Interviews",
+      "Stakeholder Interviews",
+      "Product audit",
+      "Secondary Research",
+    ]
+
+- group: Project
+  tags:
+    [
+      "Project Planning",
+      "Project Proposal",
+      "Mentorship",
+      "Leadership",
+      "Collaboration",
+      "Meeting facilitation",
+      "MVP launch",
+      "Developer Handoff",
+      "Agile Design & Dev",
+      "User Story Mapping",
+    ]

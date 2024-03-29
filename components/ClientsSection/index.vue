@@ -39,6 +39,7 @@
 </template>
 
 <script setup lang="ts">
-const data = await queryContent('clients').findOne();
+const { locale } = useI18n();
+const data = await queryContent(locale.value, 'clients').findOne();
 const clients = data.clients.sort((a: any, b: any) => (a.name > b.name ? 1 : -1));
 </script>

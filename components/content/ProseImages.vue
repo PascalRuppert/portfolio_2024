@@ -71,5 +71,5 @@ defineProps({
     default: true,
   },
 });
-const path = '../assets/case/';
+const path = '/assets/case/';
 </script>

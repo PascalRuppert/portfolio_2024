@@ -9,9 +9,13 @@
     </div>
 
     <div class="grid w-full grid-cols-4 gap-x-4 gap-y-14 sm:gap-x-6 md:grid-cols-6 xl:gap-x-8">
-      <ContentQuery v-slot="{ data }" path="/case">
+      <ContentQuery v-slot="{ data }" :path="locale + '/case'">
         <CaseCard v-for="item of data" :key="item" :title="item.card_title" :description="item.description" :image="item.card_img" :slug="item._path" />
       </ContentQuery>
     </div>
   </section>
 </template>
+
+<script setup>
+const { locale } = useI18n();
+</script>

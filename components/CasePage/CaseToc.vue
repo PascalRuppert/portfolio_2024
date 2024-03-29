@@ -42,6 +42,9 @@ export default {
   mounted() {
     setTimeout(() => {
       document.documentElement.classList.add('scroll-smooth');
+      document.querySelectorAll('.article_content h2[id]').forEach(section => {
+        this.observer.observe(section);
+      });
     }, 200);
     this.observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -51,10 +54,6 @@ export default {
         }
       });
     }, this.observerOptions);
-
-    document.querySelectorAll('.article_content h2[id]').forEach(section => {
-      this.observer.observe(section);
-    });
   },
   beforeUnmount() {
     this.observer.disconnect();

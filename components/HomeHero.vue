@@ -3,9 +3,9 @@
     <div class="grid w-full grid-cols-4 gap-x-4 sm:gap-x-6 md:grid-cols-6 xl:gap-x-8">
       <div class="col-span-4 sm:col-span-3 md:col-span-4">
         <div class="overflow-hidden h-14 w-14 xl:h-18 xl:w-18 memoji">
-          <video src="../assets/memoji/memoji.mov" loop muted playsinline data-src="'../assets/memoji/memoji.mov" poster="../assets/memoji/memoji_poster.png" class="h-[118%] scale-[1.9]" />
+          <video src="/assets/memoji/memoji.mov" loop muted playsinline data-src="'/assets/memoji/memoji.mov" poster="/assets/memoji/memoji_poster.png" class="h-[118%] scale-[1.9]" />
         </div>
-        <ContentDoc path="/home_hero" class="mt-3 xl:mt-4" />
+        <ContentDoc :path="locale + '/home_hero'" class="mt-3 xl:mt-4" />
       </div>
     </div>
   </section>
@@ -17,4 +17,8 @@ export default {
     document.querySelector('.memoji video').play();
   },
 };
+</script>
+
+<script setup>
+const { locale } = useI18n();
 </script>

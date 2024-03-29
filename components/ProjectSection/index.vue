@@ -6,7 +6,7 @@
     </div>
 
     <ol class="grid w-full grid-cols-4 gap-x-4 gap-y-6 sm:gap-x-6 md:grid-cols-6 xl:gap-x-8 xl:gap-y-8 group" :class="isMinimized && 'minimized'">
-      <ContentQuery v-slot="{ data }" path="/project">
+      <ContentQuery v-slot="{ data }" :path="locale + '/project'">
         <ProjectCard v-for="item of data" :key="item" :title="item.title" :description="item.description" :icon="item.icon" :year="item.year" :tags="item.tags" />
       </ContentQuery>
     </ol>
@@ -38,4 +38,5 @@ const isMinimized = ref(true);
 function toggleClass() {
   isMinimized.value = !isMinimized.value;
 }
+const { locale } = useI18n();
 </script>

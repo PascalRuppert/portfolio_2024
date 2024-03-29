@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="slug" class="col-span-4 sm:col-span-2 md:col-span-3 group hover:cursor-pointer">
+  <a :href="link" class="col-span-4 sm:col-span-2 md:col-span-3 group hover:cursor-pointer">
     <div class="overflow-hidden rounded aspect-w-4 aspect-h-3">
       <picture>
         <source media="(min-width: 1408px)" :srcset="img + '-640.avif 640w,' + img + '-1280.avif 1280w,' + img + '-1600.avif 1600w'" sizes="39em" type="image/avif" />
@@ -30,7 +30,7 @@
       View project ->
       <div class="w-full h-px mt-px bg-typo-600 sm:bg-[unset] sm:bg-gradient-to-r sm:from-link sm:to-link sm:bg-no-repeat sm:[background-position:0] sm:[background-size:0] sm:motion-safe:transition-all sm:motion-safe:duration-200 sm:group-hover:[background-size:100%]"></div>
     </div>
-  </NuxtLink>
+  </a>
 </template>
 
 <script lang="ts">
@@ -55,7 +55,8 @@ export default {
   },
   data() {
     return {
-      img: '../assets/case/' + this.$props.image,
+      img: '/assets/case/' + this.$props.image,
+      link: this.$props.slug.replace('/en/', '/'),
     };
   },
 };
