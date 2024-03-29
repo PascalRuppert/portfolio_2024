@@ -4,7 +4,9 @@
     <div class="px-6 sm:px-12 xl:px-16 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0">
       <div class="grid w-full grid-cols-4 gap-x-4 sm:gap-x-6 md:grid-cols-6 xl:gap-x-8">
         <div class="col-span-3 mb-10 xl:mb-12">
-          <h2 class="mt-2 antialiased text-sectiontitle font-jet text-typo-600 xl:text-xl-sectiontitle">Clients I <br class="sm:hidden" />worked with</h2>
+          <i18n-t tag="h2" keypath="ClientSection.title" class="mt-2 antialiased text-sectiontitle font-jet text-typo-600 xl:text-xl-sectiontitle">
+            <template #br><br class="sm:hidden" /></template>
+          </i18n-t>
         </div>
       </div>
     </div>

@@ -6,11 +6,13 @@
           <source type="image/avif" srcset="/assets/profilepic/Profile@2x.avif 2x, /assets/profilepic/Profile.avif 1x" />
           <source type="image/webp" srcset="/assets/profilepic/Profile@2x.webp 2x, /assets/profilepic/Profile.webp 1x" />
           <source type="image/png" srcset="/assets/profilepic/Profile@2x.png 2x, /assets/profilepic/Profile.png 1x" />
-          <img src="/assets/profilepic/Profile@2x.png" alt="Profile Picture" class="w-full max-w-[20.5rem] sm:max-w-xs md:w-3/4 md:mx-auto md:max-w-[22.813rem] lg:w-3/5 lg:max-w-none xl:w-[65%]" />
+          <img src="/assets/profilepic/Profile@2x.png" :alt="$t('Image_alt.profile')" class="w-full max-w-[20.5rem] sm:max-w-xs md:w-3/4 md:mx-auto md:max-w-[22.813rem] lg:w-3/5 lg:max-w-none xl:w-[65%]" />
         </picture>
       </div>
       <div class="col-span-4 mt-8 sm:col-span-3 md:mt-0">
-        <h3 class="antialiased uppercase text-section font-jet text-var-1 xl:text-xl-section">About me</h3>
+        <h3 class="antialiased uppercase text-section font-jet text-var-1 xl:text-xl-section">
+          {{ $t('AboutSection.name') }}
+        </h3>
         <ContentDoc :path="locale + '/about_hero'" class="mt-2 xl:mt-4" />
       </div>
     </div>

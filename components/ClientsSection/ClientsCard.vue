@@ -1,6 +1,6 @@
 <template>
   <li class="flex items-center justify-center col-span-2 mx-2 bg-white rounded-lg sm:mx-0 h-18 sm:col-span-1 lg:h-20 xl:h-22">
-    <img class="h-8 lg:h-[2.313rem]" :src="'/assets/client_logos/' + logo" :alt="'Logo of ' + name" />
+    <img class="h-8 lg:h-[2.313rem]" :src="'/assets/client_logos/' + logo" :alt="$t('Image_alt.logo', { name: name })" />
   </li>
 </template>
 

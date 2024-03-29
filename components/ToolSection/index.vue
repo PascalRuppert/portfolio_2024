@@ -3,7 +3,9 @@
   <section class="relative px-6 mt-24 sm:px-12 xl:px-16 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0 xl:mt-36">
     <div class="grid w-full grid-cols-4 gap-x-4 sm:gap-x-6 md:grid-cols-6 xl:gap-x-8">
       <div class="col-span-3 mb-10 sm:mb-12 xl:mb-16">
-        <h2 class="antialiased text-sectiontitle font-jet text-typo-600 xl:text-xl-sectiontitle">Tools & Tech <br class="sm:hidden" />I am using</h2>
+        <i18n-t tag="h2" keypath="ToolsSection.title" class="antialiased text-sectiontitle font-jet text-typo-600 xl:text-xl-sectiontitle">
+          <template #br><br class="sm:hidden" /></template>
+        </i18n-t>
       </div>
     </div>
 

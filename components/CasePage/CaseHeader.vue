@@ -29,7 +29,7 @@
           </div>
         </div>
 
-        <video v-if="cover.type === 'video'" class="object-cover w-full h-full sm:w-full sm:h-full" loop autoplay muted playsinline :poster="'/assets/case/' + cover.poster" aria-hidden="true">
+        <video v-if="cover.type === 'video'" class="object-cover w-full h-full sm:w-full sm:h-full" loop autoplay muted playsinline :poster="'/assets/case/' + cover.poster + '.jpg'" aria-hidden="true">
           <source media="(min-width: 1280px)" :src="path + cover.src + '-1920.webm'" type="video/webm" />
           <source media="(min-width: 1280px)" :src="path + cover.src + '-1920.mp4'" type="video/mp4" />
           <source media="(min-width: 1280px)" :src="path + cover.src + '-1920.mov'" type="video/mov" />
@@ -134,7 +134,7 @@
               '-2000.jpg 2000w'
             "
           />
-          <img :src="path + cover.src + '-400.jpg'" class="object-cover w-full h-full sm:w-full sm:h-full" :class="'object-' + cover.pos" alt="Case Cover Image" />
+          <img :src="path + cover.src + '-400.jpg'" class="object-cover w-full h-full sm:w-full sm:h-full" :class="'object-' + cover.pos" :alt="$t('Image_alt.caseCard', { name: client })" />
         </picture>
       </div>
     </div>

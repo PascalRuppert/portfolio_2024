@@ -9,26 +9,26 @@
             <picture>
               <source type="image/avif" srcset="../assets/memoji/Memoji.avif" />
               <source type="image/webp" srcset="../assets/memoji/Memoji.webp" />
-              <img src="../assets/memoji/Memoji.png" alt="Memoji of Pascal" class="block w-full h-full group-hover:hidden" />
+              <img src="../assets/memoji/Memoji.png" :alt="$t('Image_alt.memoji')" class="block w-full h-full group-hover:hidden" />
             </picture>
             <picture>
               <source type="image/avif" srcset="../assets/memoji/Memoji_wink.avif" />
               <source type="image/webp" srcset="../assets/memoji/Memoji_wink.webp" />
-              <img src="../assets/memoji/Memoji_wink.png" alt="Memoji of Pascal" class="hidden w-full h-full group-hover:block" />
+              <img src="../assets/memoji/Memoji_wink.png" :alt="$t('Image_alt.memoji')" class="hidden w-full h-full group-hover:block" />
             </picture>
           </div>
         </a>
         <nav class="flex flex-row flex-wrap content-center antialiased gap-x-10 text-typo-600 text-body xl:text-xl-body font-jet">
           <a :href="localePath('/')" :class="{ active: activeRoute === 'index' }" class="group">
-            <p>// home</p>
+            <p class="before:content-['//_']">{{ $t('nav.home') }}</p>
             <div class="w-full h-px mt-px bg-gradient-to-r from-link to-link bg-no-repeat [background-position:0] [background-size:0] motion-safe:transition-all motion-safe:duration-200 group-hover:[background-size:100%]"></div>
           </a>
           <a :href="localePath('/about')" :class="{ active: activeRoute === 'about' }" class="group">
-            <p>// about</p>
+            <p class="before:content-['//_']">{{ $t('nav.about') }}</p>
             <div class="w-full h-px mt-px bg-gradient-to-r from-link to-link bg-no-repeat [background-position:0] [background-size:0] motion-safe:transition-all motion-safe:duration-200 group-hover:[background-size:100%]"></div>
           </a>
           <a href="mailto:ixd.pascalruppert@gmail.com" class="group">
-            <p>// contact</p>
+            <p class="before:content-['//_']">{{ $t('nav.contact') }}</p>
             <div class="w-full h-px mt-px bg-gradient-to-r from-link to-link bg-no-repeat [background-position:0] [background-size:0] motion-safe:transition-all motion-safe:duration-200 group-hover:[background-size:100%]"></div>
           </a>
           <LanguageSwitch />
@@ -58,13 +58,13 @@
           <LanguageSwitch />
           <nav class="flex flex-col flex-wrap items-start antialiased gap-y-4 text-typo-600 text-menu font-jet">
             <a :href="localePath('/')" :class="{ active: activeRoute === 'index' }">
-              <p>home</p>
+              <p>{{ $t('nav.home') }}</p>
             </a>
             <a :href="localePath('/about')" :class="{ active: activeRoute === 'about' }">
-              <p>about</p>
+              <p>{{ $t('nav.about') }}</p>
             </a>
             <a href="mailto:ixd.pascalruppert@gmail.com">
-              <p>contact</p>
+              <p>{{ $t('nav.contact') }}</p>
             </a>
           </nav>
 

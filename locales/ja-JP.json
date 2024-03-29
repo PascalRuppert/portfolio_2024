@@ -1,0 +1,61 @@
+{
+    "nav":{
+        "home": "ホーム",
+        "about": "私について",
+        "contact": "お問い合わせ"
+    },
+
+    "Image_alt": {
+        "memoji": "パスカルのミー文字",
+        "caseCard": "{name}プロジェクトの写真",
+        "caseCover": "{name}プロジェクトのカバー画像",
+        "profile": "プロフィールの写真",
+        "logo": "{name}のロゴ"
+    },
+
+    "CaseSection": {
+        "name": "制作物",
+        "title": "特集された{br}プロジェクト",
+        "cta": "プロジェクトを見る"
+    },
+
+    "ProjectSection": {
+        "title": "また、{br}言及価値あり",
+        "show": "すべて表示",
+        "hide": "表示を減らす"
+    },
+
+    "ContactSection": {
+        "name": "コラボレーション",
+        "title": "プロジェクトがあれば、{br}話しましょう",
+        "cta": "メールを送る"
+    },
+
+    "AboutSection": {
+        "name": "自己紹介"
+    },
+
+    "ClientSection": {
+        "title": "共同作業した{br}クライアント"
+    },
+
+    "ExperienceSection": {
+        "title": "職務経歴"
+    },
+
+    "EducationSection": {
+        "title": "学歴"
+    },
+
+    "SkillsSection": {
+        "title": "できること"
+    },
+
+    "ToolsSection": {
+        "title": "使用している{br}ツールとテクノロジー"
+    },
+
+    "Case":{
+        "toc": "目次"
+    }
+}

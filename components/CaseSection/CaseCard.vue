@@ -17,7 +17,7 @@
         <source :srcset="img + '-400.avif 400w,' + img + '-640.avif 640w,' + img + '-800.avif 800w,' + img + '-960.avif 960w,' + img + '-1280.avif 1280w,' + img + '-1600.avif 1600w'" sizes="calc(100vw - 3em)" type="image/avif" />
         <source :srcset="img + '-400.webp 400w,' + img + '-640.webp 640w,' + img + '-800.webp 800w,' + img + '-960.webp 960w,' + img + '-1280.webp 1280w,' + img + '-1600.webp 1600w'" sizes="calc(100vw - 3em)" type="image/webp" />
         <source :srcset="img + '-400.jpg 400w,' + img + '-640.jpg 640w,' + img + '-800.jpg 800w,' + img + '-960.jpg 960w,' + img + '-1280.jpg 1280w,' + img + '-1600.jpg 1600w'" sizes="calc(100vw - 3em)" />
-        <img :src="img + '-1600.jpg'" class="object-cover object-center w-full h-full ease-in-out sm:motion-safe:transition sm:motion-safe:duration-200 sm:group-hover:scale-105" :alt="image" />
+        <img :src="img + '-1600.jpg'" class="object-cover object-center w-full h-full ease-in-out sm:motion-safe:transition sm:motion-safe:duration-200 sm:group-hover:scale-105" :alt="$t('Image_alt.caseCard', { name: client })" />
       </picture>
     </div>
     <h3 class="mt-4 antialiased text-itemtitle font-jet text-typo-600 xl:text-xl-itemtitle text-shadow">
@@ -27,7 +27,7 @@
       {{ description }}
     </p>
     <div class="inline-block mt-4 antialiased uppercase text-btn text-typo-600 font-jet xl:text-xl-btn">
-      View project ->
+      <p class="after:content-['->'] after:ml-2">{{ $t('CaseSection.cta') }}</p>
       <div class="w-full h-px mt-px bg-typo-600 sm:bg-[unset] sm:bg-gradient-to-r sm:from-link sm:to-link sm:bg-no-repeat sm:[background-position:0] sm:[background-size:0] sm:motion-safe:transition-all sm:motion-safe:duration-200 sm:group-hover:[background-size:100%]"></div>
     </div>
   </a>
@@ -49,6 +49,10 @@ export default {
       required: true,
     },
     image: {
+      type: String,
+      required: true,
+    },
+    client: {
       type: String,
       required: true,
     },

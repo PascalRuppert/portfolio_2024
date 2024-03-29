@@ -1,7 +1,9 @@
 <template>
   <aside class="sticky self-start hidden col-span-1 col-start-1 top-22 lg:block xl:top-24">
     <nav>
-      <h4 class="font-bold text-detail xl:text-xl-detail xl:font-bold font-jet text-typo-500">On this page</h4>
+      <h4 class="font-bold text-detail xl:text-xl-detail xl:font-bold font-jet text-typo-500">
+        {{ $t('Case.toc') }}
+      </h4>
       <ul role="list" class="relative mt-2 space-y-1 before:absolute before:h-[calc(100%-0.5rem)] before:w-0.5 before:top-1 before:-left-px before:rounded before:bg-typo-500/10 xl:mt-3 xl:space-y-2">
         <li v-for="{ id, text } in toc" :id="'toc_' + id" :key="id" class="relative">
           <nuxt-link
