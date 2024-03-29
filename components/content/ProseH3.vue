@@ -1,5 +1,5 @@
 <template>
-  <h3 :id="id" class="mt-[1.625rem] antialiased text-itemtitle font-jet text-typo-600 xl:text-xl-itemtitle scroll-mt-22 xl:scroll-mt-24 xl:mt-[1.875rem]">
+  <h3 class="mt-[1.625rem] antialiased text-itemtitle font-jet text-typo-600 xl:text-xl-itemtitle scroll-mt-22 xl:scroll-mt-24 xl:mt-[1.875rem]">
     <slot />
   </h3>
 </template>
