@@ -16,6 +16,6 @@ head:
       content: "Pascal Ruppert"
 ---
 
-# 日本語 title tagline to summarize what this [portfolio]{.text-var-2.text-shadow-var-2} is about
+# この[ポートフォリオ]{.text-var-2.text-shadow-var-2}が何についてのものかを要約するヒーロー・タイトルのタグライン
 
-Here will be a short bio that describes my area of expertise, approach to digital design and user centered mindset. Ideally 2 to 3 lines long, right now placeholder
+ここには、私の専門分野、デジタルデザインへのアプローチ、ユーザー中心の考え方を説明する短い経歴を記載します。2〜3行が理想ですが、今はプレースホルダーにしています。

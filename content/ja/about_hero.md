@@ -16,8 +16,8 @@ head:
       content: "Pascal Ruppert"
 ---
 
-# 日本語 am [Pascal Ruppert]{.text-var-2.text-shadow-var-2}, a Digital Product Designer in Tokyo
+# 私は[パスカル・ルパート]{.text-var-2.text-shadow-var-2}、東京に住んでいるデジタル・プロダクト・デザイナーです。
 
-Here will be the first paragraph of a longer bio that describes my area of expertise, approach to digital design and user centered mindset. Here will be the first paragraph of a longer bio that describes my area of expertise, approach to digital design and user centered mindset. Here will be the first paragraph.
+ここでは、私の専門分野、デジタルデザインへのアプローチ、ユーザー中心の考え方を説明する長い経歴の最初の段落になります。ここでは、私の専門分野、デジタルデザインへのアプローチ、ユーザー中心の考え方を説明する長い経歴の最初の段落になります。これが最初の段落になります。
 
-Then we have a second paragraph of a longer bio that describes my area of expertise, approach to digital design and user centered mindset. Then we have a second paragraph of a longer bio that describes my area of expertise and mindset.
+次に、私の専門分野、デジタル・デザインへのアプローチ、ユーザー中心の考え方について述べた長い経歴の2段落目です。次に、私の専門分野と考え方を説明する長い経歴の2段落目があります。

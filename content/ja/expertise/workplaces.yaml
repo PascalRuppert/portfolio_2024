@@ -1,37 +1,37 @@
-- name: Designit
-  corp: a wipro company
+- name: Designit Tokyo
+  corp: 株式会社
   shorten: true
-  tenure: 6 years 10 months
+  tenure: 6年10ヶ月
   logo: designit
   location:
-    city: Tokyo
-    country: Japan
+    city: 東京
+    country: 日本
 
   positions:
-    - title: Senior Digital Designer
-      duration: Jun 2022 - Feb 2023
+    - title: シニア・デジタル・デザイナー
+      duration: 2022年6月 ー 2023年2月
 
-    - title: Digital Designer
-      duration: Jun 2019 - May 2022
+    - title: デジタル・デザイナー
+      duration: 2019年6月 ー 2022年5月
 
-    - title: Junior Digital Designer
-      duration: Apr 2017 - May 2019
+    - title: ジュニア・デジタル・デザイナー
+      duration: 2017年4月 ー 2019年5月
 
-    - title: Freelance UX Designer
-      duration: Oct 2016 - Mar 2017
+    - title: フリーランサー・UX・デザイン
+      duration: 2016年10月 ー 2017年3月
 
-    - title: UX Design Intern
-      duration: May 2016 - Oct 2016
+    - title: UX・デザイン・インターン
+      duration: 2016年5月 ー 2016年10月
 
 - name: HERE,
   corp: a Nokia company
   shorten: false
-  tenure: 7 months
+  tenure: 7ヶ月
   logo: here
   location:
-    city: Berlin
-    country: Germany
+    city: ベルリン
+    country: ドイツ
 
   positions:
-    - title: Interaction Design Intern
-      duration: Aug 2014 - Feb 2015
+    - title: インタラクションデザインインターン
+      duration: 2014年8月 ー 2015年2月
