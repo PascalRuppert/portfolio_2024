@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxtjs/i18n'],
-  css: ['@/assets/css/jetbrains.css'],
+  css: ['@/assets/css/jetbrains.css', '@/assets/css/notosans.css'],
   i18n: {
     locales: [
       {

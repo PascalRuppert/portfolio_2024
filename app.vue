@@ -1,7 +1,10 @@
 <script setup lang="ts">
+const head = useLocaleHead({
+  addSeoAttributes: true,
+});
 useHead({
   htmlAttrs: {
-    lang: 'en-US',
+    lang: head.value.htmlAttrs.lang,
     class: 'overscroll-none',
   },
   bodyAttrs: {

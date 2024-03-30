@@ -56,7 +56,7 @@ module.exports = {
       },
 
       fontFamily: {
-        jet: ['"JetBrains Mono"', 'ui-monospace', 'Menlo', 'Monaco', 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'monospace'],
+        jet: ['JetBrains Mono', 'Noto Sans JP', 'ui-monospace', 'Menlo', 'Monaco', 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'monospace'],
       },
 
       fontSize: {

@@ -1,61 +1,60 @@
 {
-    "nav":{
-        "home": "home",
-        "about": "about",
-        "contact": "contact"
-    },
+  "nav": {
+    "home": "home",
+    "about": "about",
+    "contact": "contact"
+  },
 
-    "Image_alt": {
-        "memoji": "Memoji of Pascal",
-        "caseCard": "{name} project image",
-        "caseCover": "{name} cover image",
-        "profile": "Profile Picture",
-        "logo": "Logo of {name}"
-    },
+  "Image_alt": {
+    "memoji": "Memoji of Pascal",
+    "caseCard": "{name} project image",
+    "caseCover": "{name} cover image",
+    "profile": "Profile Picture",
+    "logo": "Logo of {name}"
+  },
 
-    "CaseSection": {
-        "name": "Work",
-        "title": "Featured{br}projects",
-        "cta": "View project"
-    },
+  "CaseSection": {
+    "name": "Work",
+    "title": "Featured{br}projects",
+    "cta": "View project"
+  },
 
-    "ProjectSection": {
-        "title": "Also worth{br}mentioning",
-        "show": "Show all",
-        "hide": "Show less"
-    },
+  "ProjectSection": {
+    "title": "Also worth{br}mentioning",
+    "show": "Show all",
+    "hide": "Show less"
+  },
 
-    "ContactSection": {
-        "name": "Collaborate",
-        "title": "Got a project?{br}Let's talk",
-        "cta": "Send email"
-    },
+  "ContactSection": {
+    "name": "Collaborate",
+    "title": "Got a project?{br}Let's talk",
+    "cta": "Send email"
+  },
 
-    "AboutSection": {
-        "name": "About me"
-    },
+  "AboutSection": {
+    "name": "About me"
+  },
 
-    "ClientSection": {
-        "title": "Clients I {br}worked with"
-    },
+  "ClientSection": {
+    "title": "Clients I {br}worked with"
+  },
 
-    "ExperienceSection": {
-        "title": "Working Experience"
-    },
+  "ExperienceSection": {
+    "title": "Working Experience"
+  },
 
-    "EducationSection": {
-        "title": "Education"
-    },
+  "EducationSection": {
+    "title": "Education"
+  },
 
-    "SkillsSection": {
-        "title": "Skills"
-    },
-    "ToolsSection": {
-        "title": "Tools & Tech {br}I am using"
-    },
+  "SkillsSection": {
+    "title": "Skills"
+  },
+  "ToolsSection": {
+    "title": "Tools & Tech {br}I am using"
+  },
 
-    "Case":{
-        "toc": "On this page"
-    }
-
+  "Case": {
+    "toc": "On this page"
+  }
 }
