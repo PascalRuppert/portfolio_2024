@@ -1,19 +1,25 @@
 ---
 title: "Pascal Ruppert | About"
-description: "Page descripion"
-# image:
-#   src: '/assets/image.jpg'
-#   alt: 'An image showcasing My Page.'
-#   width: 400
-#   height: 300
+description: "Page descripion About"
+
 head:
+  image:
+    src: '/assets/image.jpg'
+    alt: 'An image showcasing My About Page.'
+    width: 800
+    height: 418
+
   meta:
     - name: "keywords"
       content: "digital product design, user experience design, interaction design, application design, user interface design, portfolio"
-    - name: "robots"
-      content: "index, follow"
-    - name: "author"
-      content: "Pascal Ruppert"
+    - name: "og:type"
+      content: "profile"
+    - name: "profile:first_name"
+      content: "Pascal"
+    - name: "profile:last_name"
+      content: "Ruppert"
+    - name: "profile:gender"
+      content: "male"
 ---
 
 # I am [Pascal Ruppert]{.text-var-2.text-shadow-var-2}, a Digital Product Designer in Tokyo

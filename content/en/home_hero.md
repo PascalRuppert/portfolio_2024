@@ -1,19 +1,19 @@
 ---
 title: "Pascal Ruppert | Digital Product Designer"
-description: "Page descripion"
-# image:
-#   src: '/assets/image.jpg'
-#   alt: 'An image showcasing My Page.'
-#   width: 400
-#   height: 300
+description: "Page descripion Home"
+
 head:
+  image:
+    src: '/assets/image.jpg'
+    alt: 'An image showcasing My Home Page.'
+    width: 800
+    height: 418
+
   meta:
     - name: "keywords"
       content: "digital product design, user experience design, interaction design, application design, user interface design, portfolio"
-    - name: "robots"
-      content: "index, follow"
-    - name: "author"
-      content: "Pascal Ruppert"
+    - name: "og:type"
+      content: "website"
 ---
 
 # Hero title tagline to summarize what this [portfolio]{.text-var-2.text-shadow-var-2} is about
