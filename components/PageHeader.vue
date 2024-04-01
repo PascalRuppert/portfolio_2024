@@ -102,6 +102,13 @@ export default {
     getRoute() {
       this.activeRoute = this.$route.name.slice(0, -5);
     },
+
+    resize_close() {
+      if (window.innerWidth > 719) {
+        this.mobileMenu();
+      }
+    },
+
     mobileMenu() {
       if (!this.menuOpen) {
         this.scrollPosition = window.scrollY;
@@ -109,6 +116,8 @@ export default {
         document.querySelector('meta[name="theme-color"]').setAttribute('content', '#02111d');
         document.body.classList.add('overflow-hidden', 'fixed');
         document.getElementsByTagName('main')[0].style.top = -this.scrollPosition + 'px';
+
+        window.addEventListener('resize', this.resize_close);
       } else {
         document.querySelector('meta[name="theme-color"]').setAttribute('content', '#021626');
         document.body.classList.remove('overflow-hidden', 'fixed');
@@ -121,6 +130,7 @@ export default {
           document.documentElement.classList.add('scroll-smooth');
         }
         this.menuOpen = false;
+        window.removeEventListener('resize', this.resize_close);
       }
     },
   },
